@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Login-Register")]
+[assembly: AssemblyTitle("Login_Register")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Login-Register")]
+[assembly: AssemblyProduct("Login_Register")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0e3f7afa-2ab4-46c6-a7d0-343a31b46b6c")]
+[assembly: Guid("865e246c-23ba-4dbd-812e-d550e669d846")]
 
 // Version information for an assembly consists of the following four values:
 //
