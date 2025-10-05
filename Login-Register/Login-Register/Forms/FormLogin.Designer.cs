@@ -1,4 +1,4 @@
-﻿namespace Login_Register
+﻿namespace Login_Register.Forms
 {
     partial class FormLogin
     {

@@ -1,6 +1,6 @@
-﻿namespace Login_Register
+﻿namespace Login_Register.Forms
 {
-    partial class FormUserInfo
+    partial class FormRegister
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormUserInfo";
+            this.Text = "FormRegister";
         }
 
         #endregion
