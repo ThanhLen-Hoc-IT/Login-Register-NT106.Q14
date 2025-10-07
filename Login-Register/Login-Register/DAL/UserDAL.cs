@@ -15,7 +15,6 @@ using System.Data;
 using System.Data.SqlClient;
 using Login_Register.Models;
 using Login_Register.Utils;
-using Login_Register.Utlis;
 
 namespace Login_Register.DAL
 {
@@ -35,7 +34,6 @@ namespace Login_Register.DAL
         public static void RegisterUser(User user)
         {
             // Hash mật khẩu trước khi lưu
-            string hashedPassword = PasswordHash.HashPassword(user.Password);
 
             string query = "INSERT INTO Users (Username, HashedPassword, Email) VALUES (@u, @p, @e)";
             SqlParameter[] parameters = {
