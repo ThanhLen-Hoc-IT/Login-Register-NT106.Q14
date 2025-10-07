@@ -7,7 +7,7 @@ namespace Login_Register
     {
         static void Main()
         {
-            DatabaseHelper.ConnectToDatabase();
+            DatabaseHelper.GetConnection();
         }
     }
 }
