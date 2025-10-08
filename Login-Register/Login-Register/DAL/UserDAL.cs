@@ -31,9 +31,10 @@ namespace Login_Register.DAL
         }
 
         // ✅ Thêm người dùng mới (đăng ký)
-        public static void RegisterUser(User user)
+        public static void RegisterUser(User user, string plainPassword)
         {
-            // Hash mật khẩu trước khi lưu
+            //Hash mật khẩu trước khi lưu
+        string hashedPassword = PasswordHash.HashPassword(plainPassword);
 
             string query = "INSERT INTO Users (Username, HashedPassword, Email) VALUES (@u, @p, @e)";
             SqlParameter[] parameters = {
@@ -64,7 +65,7 @@ namespace Login_Register.DAL
             if (!PasswordHash.VerifyPassword(password, storedHash))
                 return null;
 
-            // Đăng nhập thành công -> trả về đối tượng User
+            //Đăng nhập thành công -> trả về đối tượng User
             return new User
             {
                 UserId = (int)row["UserId"],

@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 
 namespace Login_Register.Models
 {
-    internal class User
+    public class User
     {
         public int UserId { get; set; }
         public string Username { get; set; }
