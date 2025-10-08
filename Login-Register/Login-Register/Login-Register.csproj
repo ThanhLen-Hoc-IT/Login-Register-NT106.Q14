@@ -87,6 +87,9 @@
     <Compile Include="Utils\DatabaseHelper.cs" />
     <Compile Include="Utils\PasswordHash.cs" />
     <Compile Include="Utils\ValidationHelper.cs" />
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
