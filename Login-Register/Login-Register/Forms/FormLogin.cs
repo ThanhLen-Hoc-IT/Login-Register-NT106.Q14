@@ -80,4 +80,6 @@ namespace Login_Register.Forms
                 }
             }
         }
+    }
+
 }

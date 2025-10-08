@@ -75,7 +75,6 @@
             this.Dangky.TabIndex = 4;
             this.Dangky.Text = "dang ky";
             this.Dangky.UseVisualStyleBackColor = true;
-            this.Dangky.Click += new System.EventHandler(this.Dangky_Click);
             // 
             // label1
             // 
