@@ -34,8 +34,6 @@
             this.lblDisplayUsername = new System.Windows.Forms.Label();
             this.lblDisplayEmail = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.picSticker = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picSticker)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -57,6 +55,7 @@
             this.lblUserName.Size = new System.Drawing.Size(156, 25);
             this.lblUserName.TabIndex = 1;
             this.lblUserName.Text = "Tên đăng nhập: ";
+            this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);
             // 
             // lblEmail
             // 
@@ -97,23 +96,11 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // picSticker
-            // 
-            this.picSticker.Image = global::Login_Register.Properties.Resources.Firework;
-            this.picSticker.Location = new System.Drawing.Point(444, 256);
-            this.picSticker.Name = "picSticker";
-            this.picSticker.Size = new System.Drawing.Size(210, 146);
-            this.picSticker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSticker.TabIndex = 6;
-            this.picSticker.TabStop = false;
-            this.picSticker.Click += new System.EventHandler(this.picSticker_Click);
-            // 
             // FormUserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.picSticker);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.lblDisplayEmail);
             this.Controls.Add(this.lblDisplayUsername);
@@ -122,7 +109,6 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "FormUserInfo";
             this.Text = "FormUserInfo";
-            ((System.ComponentModel.ISupportInitialize)(this.picSticker)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +122,5 @@
         private System.Windows.Forms.Label lblDisplayUsername;
         private System.Windows.Forms.Label lblDisplayEmail;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.PictureBox picSticker;
     }
 }

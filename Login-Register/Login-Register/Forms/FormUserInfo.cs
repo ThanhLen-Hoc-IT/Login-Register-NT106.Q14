@@ -22,8 +22,7 @@ namespace Login_Register
             lblTitle.Text = "Thông tin người dùng";
             LoadUserInfo();
 
-            // 🌟 THÊM ĐOẠN NÀY: hiển thị sticker chúc mừng khi đăng nhập
-            ShowWelcomeSticker();
+            
         }
 
         private void LoadUserInfo()
@@ -73,28 +72,11 @@ namespace Login_Register
         }
 
         // 🌟 HÀM MỚI — hiển thị sticker khi form mở
-        private void ShowWelcomeSticker()
+       
+
+        private void lblUserName_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Đảm bảo picSticker đã tồn tại trong form (kéo sẵn trong Design)
-                picSticker.Visible = true;
 
-                // Đặt ảnh GIF chúc mừng (đã thêm vào project)
-                // Nếu file GIF nằm trong thư mục gốc của project
-                picSticker.Image = Image.FromFile("congrats.gif");
-
-                // Tùy chọn: chỉnh kích thước hiển thị
-                picSticker.SizeMode = PictureBoxSizeMode.Zoom;
-
-                // Thay đổi tiêu đề để tạo cảm giác thân thiện hơn
-                lblTitle.Text = "🎉 Chào mừng bạn đăng nhập thành công! 🎉";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Không thể tải sticker: " + ex.Message,
-                                "Lỗi ảnh", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
         }
     }
 }
